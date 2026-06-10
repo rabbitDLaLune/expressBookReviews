@@ -8,7 +8,7 @@ let users = require("./auth_users.js").users;
 const public_users = express.Router();
 
 
-// Register a new user
+// Task 6: Register a new user
 public_users.post("/register", (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
@@ -158,7 +158,7 @@ public_users.get('/title/:title', function (req, res) {
 });
 
 
-// Get book review
+// Task 5: Get book review
 public_users.get('/review/:isbn', function (req, res) {
   const isbn = req.params.isbn;
 
